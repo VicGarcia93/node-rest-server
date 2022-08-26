@@ -4,9 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acceso denegado</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <title>Login</title>
 </head>
 <body>
-    <h1>Acceso denegado</h1>
+    <section class="row">
+
+        <div class="col-6">
+            <form action="" class="form-group d-grid" id="miFormulario">
+                <input type="text" class="form-control mt-2" name="correo" id="txtCorreo" placeholder="Correo">
+                <input type="text" class="form-control mt-2" name="password" id="txtPassword" placeholder="Contraseña">
+                <button class="btn btn-primary mt-5">Login</button>
+            </form>
+        </div>
+        
+    </section>
+
+    <script src="./socket.io/socket.io.js"></script>
+    <script src="./js/auth.js"></script>
 </body>
 </html>

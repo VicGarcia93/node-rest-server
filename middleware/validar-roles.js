@@ -19,7 +19,7 @@ const esAdminRol = (req, res = response, next )=> {
 }
 
 const tieneRol = ( ...roles)=>{
-    console.log(roles);
+    
     return ( req, res = response, next)=>{
         if( !req.usuario ){
             return res.status(500).json({
